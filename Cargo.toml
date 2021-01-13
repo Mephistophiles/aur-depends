@@ -16,13 +16,13 @@ exclude = ["tests"]
 alpm = "1.1.0"
 alpm-utils = "0.6.0"
 log = "0.4.11"
-raur = "4.0.0"
+raur = { version = "5.0.0", git = "https://gitlab.com/davidbittner/raur" }
 bitflags = "1.2.1"
 
 [dev-dependencies]
 async-trait = "0.1.41"
-simplelog = "0.8.0"
-tokio = { version = "0.2", features = ["macros"]}
+simplelog = "0.9.0"
+tokio = { version = "1.0.1", features = ["macros"]}
 
 [features]
 git = ["alpm/git", "alpm-utils/git"]
